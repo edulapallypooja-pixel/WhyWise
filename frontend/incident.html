@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WhyWise | Incident Analysis</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <span>◈</span>
+
+            <div>
+                <h2>WhyWise</h2>
+                <small>Decision Intelligence</small>
+            </div>
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                ◉ Dashboard
+            </a>
+
+            <a href="new-incident.html">
+                ＋ New Incident
+            </a>
+
+            <a class="active" href="incident.html">
+                ◌ Incidents
+            </a>
+
+            <a href="memory.html">
+                ◇ Memory
+            </a>
+
+            <a href="insights.html">
+                ◈ Insights
+            </a>
+
+        </nav>
+
+        <div class="memory-status">
+
+            <div class="status-dot"></div>
+
+            <div>
+                <strong>Hindsight</strong>
+                <small>Memory Active</small>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- HEADER -->
+        <header class="topbar">
+
+            <div>
+
+                <p class="eyebrow">
+                    WHYWISE ANALYSIS
+                </p>
+
+                <h1>
+                    Incident Intelligence
+                </h1>
+
+                <p class="subtitle">
+                    WhyWise searched organizational memory
+                    for similar incidents and previous decisions.
+                </p>
+
+            </div>
+
+            <div class="analysis-status">
+                ● Memory Search Complete
+            </div>
+
+        </header>
+
+
+        <!-- CURRENT INCIDENT -->
+        <section class="analysis-card">
+
+            <div class="section-title">
+
+                <div>
+                    <p class="eyebrow">
+                        CURRENT INCIDENT
+                    </p>
+
+                    <h2 id="currentService">
+                        Payment API
+                    </h2>
+                </div>
+
+                <span class="severity high" id="currentSeverity">
+                    HIGH
+                </span>
+
+            </div>
+
+
+            <p class="incident-description" id="currentDescription">
+                API response time increased from 400ms to
+                4.8 seconds. Multiple users are experiencing
+                slow payment processing.
+            </p>
+
+
+            <div class="incident-meta">
+
+                <div>
+                    <small>Incident Type</small>
+                    <strong id="currentType">
+                        API Performance
+                    </strong>
+                </div>
+
+                <div>
+                    <small>Symptoms</small>
+                    <strong id="currentSymptoms">
+                        High latency, database timeout
+                    </strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MEMORY FOUND -->
+        <section class="memory-found">
+
+            <div class="memory-found-header">
+
+                <div>
+
+                    <p class="eyebrow">
+                        HINDSIGHT MEMORY
+                    </p>
+
+                    <h2>
+                        3 Similar Incidents Found
+                    </h2>
+
+                </div>
+
+                <span class="memory-live">
+                    ● MEMORY ACTIVE
+                </span>
+
+            </div>
+
+
+            <!-- MEMORY CARD 1 -->
+            <div class="memory-card">
+
+                <div class="memory-top">
+
+                    <div>
+
+                        <span class="memory-number">
+                            PAST INCIDENT #1
+                        </span>
+
+                        <h3>
+                            Payment API Latency
+                        </h3>
+
+                    </div>
+
+                    <span class="similarity">
+                        94% Similar
+                    </span>
+
+                </div>
+
+
+                <div class="memory-grid">
+
+                    <div>
+
+                        <small>Previous Decision</small>
+
+                        <p>
+                            Restarted application servers
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <small>Outcome</small>
+
+                        <p class="warning-text">
+                            Temporary recovery
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <small>Root Cause</small>
+
+                        <p>
+                            Database connection pool exhaustion
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="lesson">
+
+                    <strong>Lesson learned</strong>
+
+                    <p>
+                        Restarting servers provides only temporary
+                        relief when database connection pools are
+                        exhausted.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- MEMORY CARD 2 -->
+            <div class="memory-card">
+
+                <div class="memory-top">
+
+                    <div>
+
+                        <span class="memory-number">
+                            PAST INCIDENT #2
+                        </span>
+
+                        <h3>
+                            Checkout API Slowdown
+                        </h3>
+
+                    </div>
+
+                    <span class="similarity">
+                        87% Similar
+                    </span>
+
+                </div>
+
+
+                <div class="memory-grid">
+
+                    <div>
+
+                        <small>Previous Decision</small>
+
+                        <p>
+                            Increased database connection pool
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <small>Outcome</small>
+
+                        <p class="success-text">
+                            Resolved
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <small>Root Cause</small>
+
+                        <p>
+                            Connection saturation
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="lesson">
+
+                    <strong>Lesson learned</strong>
+
+                    <p>
+                        Increasing the connection pool resolved
+                        the issue when sustained traffic was the
+                        underlying cause.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- CHANGED ASSUMPTION -->
+        <section class="assumption-alert">
+
+            <div class="alert-icon">
+                ⚠
+            </div>
+
+            <div>
+
+                <p class="eyebrow">
+                    WHYNOT — CHANGED ASSUMPTION
+                </p>
+
+                <h2>
+                    Previous reasoning may no longer apply
+                </h2>
+
+                <p>
+                    A previous incident assumed the traffic spike
+                    was temporary. Current evidence shows that
+                    traffic has remained elevated for several hours.
+                </p>
+
+
+                <div class="assumption-grid">
+
+                    <div>
+
+                        <small>
+                            PREVIOUS ASSUMPTION
+                        </small>
+
+                        <strong>
+                            Traffic spike is temporary
+                        </strong>
+
+                    </div>
+
+                    <div>
+
+                        <small>
+                            CURRENT EVIDENCE
+                        </small>
+
+                        <strong>
+                            Sustained traffic increase
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECOMMENDATION -->
+        <section class="recommendation-card">
+
+            <div>
+
+                <p class="eyebrow">
+                    WHYWISE REASONING
+                </p>
+
+                <h2>
+                    Recommended next step
+                </h2>
+
+                <p>
+                    Investigate database connection saturation
+                    before restarting application servers again.
+                    Historical incidents suggest that restarting
+                    servers only provides temporary recovery.
+                </p>
+
+            </div>
+
+            <div class="confidence">
+
+                <span>
+                    Historical confidence
+                </span>
+
+                <strong>
+                    High
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- HUMAN DECISION -->
+        <section class="decision-card">
+
+            <div>
+
+                <p class="eyebrow">
+                    HUMAN REVIEW
+                </p>
+
+                <h2>
+                    What would you like to do?
+                </h2>
+
+                <p>
+                    WhyWise provides historical context and a
+                    recommendation. The final decision remains
+                    with the engineer.
+                </p>
+
+            </div>
+
+
+            <div class="decision-buttons">
+
+                <button class="approve-btn" onclick="submitOutcome('Approved')">
+    ✓ Approve Recommendation
+</button>
+
+<button class="modify-btn" onclick="submitOutcome('Modified')">
+    ✎ Modify
+</button>
+
+<button class="reject-btn" onclick="submitOutcome('Rejected')">
+    ✕ Reject
+</button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/analysis.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WhyWise | Incident Intelligence</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <span>◈</span>
+            <div>
+                <h2>WhyWise</h2>
+                <small>Decision Intelligence</small>
+            </div>
+        </div>
+
+        <nav>
+
+            <a class="active" href="index.html">
+                ◉ Dashboard
+            </a>
+
+            <a href="new-incident.html">
+                ＋ New Incident
+            </a>
+
+            <a href="incident.html">
+                ◌ Incidents
+            </a>
+
+            <a href="memory.html">
+                ◇ Memory
+            </a>
+
+            <a href="insights.html">
+                ◈ Insights
+            </a>
+
+        </nav>
+
+        <div class="memory-status">
+            <div class="status-dot"></div>
+
+            <div>
+                <strong>Hindsight</strong>
+                <small>Memory Active</small>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+                <p class="eyebrow">ORGANIZATIONAL MEMORY</p>
+
+                <h1>Good morning, Engineer 👋</h1>
+
+                <p class="subtitle">
+                    Your organization's incident memory is learning.
+                </p>
+            </div>
+
+            <button class="new-btn"
+        onclick="startAnalysis()">
+    + Analyze Incident
+</button>
+
+        </header>
+
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <span>Total Incidents</span>
+
+                <strong>128</strong>
+
+                <small>↑ 12 this month</small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>Resolved</span>
+
+                <strong>43</strong>
+
+                <small>91% resolution rate</small>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>Decisions Remembered</span>
+
+                <strong>27</strong>
+
+                <small>Across 6 services</small>
+
+            </div>
+
+
+            <div class="stat-card highlight">
+
+                <span>Lessons Learned</span>
+
+                <strong>18</strong>
+
+                <small>From previous outcomes</small>
+
+            </div>
+
+        </section>
+
+
+        <section class="content-grid">
+
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <p class="eyebrow">RECENT ACTIVITY</p>
+                        <h2>Incident Memory</h2>
+                    </div>
+
+                    <a href="incident.html">
+                        View all →
+                    </a>
+
+                </div>
+
+
+                <div class="incident-list">
+
+                    <div class="incident-card">
+
+                        <div class="incident-icon danger">
+                            !
+                        </div>
+
+                        <div class="incident-info">
+
+                            <h3>Payment API Latency</h3>
+
+                            <p>
+                                Database connection pool exhaustion
+                            </p>
+
+                            <div class="tags">
+
+                                <span class="tag red">
+                                    HIGH
+                                </span>
+
+                                <span class="tag">
+                                    API
+                                </span>
+
+                                <span class="tag success">
+                                    RESOLVED
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="similarity">
+
+                            <strong>94%</strong>
+
+                            <small>similarity</small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="incident-card">
+
+                        <div class="incident-icon warning">
+                            !
+                        </div>
+
+                        <div class="incident-info">
+
+                            <h3>Database Timeout</h3>
+
+                            <p>
+                                Connection pool exceeded threshold
+                            </p>
+
+                            <div class="tags">
+
+                                <span class="tag yellow">
+                                    MEDIUM
+                                </span>
+
+                                <span class="tag">
+                                    DATABASE
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="similarity">
+
+                            <strong>87%</strong>
+
+                            <small>similarity</small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="panel memory-panel">
+
+                <p class="eyebrow">HINDSIGHT</p>
+
+                <h2>What WhyWise remembers</h2>
+
+                <div class="memory-item">
+
+                    <span>🧠</span>
+
+                    <div>
+                        <strong>Previous solutions</strong>
+                        <small>42 remembered</small>
+                    </div>
+
+                </div>
+
+
+                <div class="memory-item">
+
+                    <span>↩</span>
+
+                    <div>
+                        <strong>Rejected approaches</strong>
+                        <small>17 remembered</small>
+                    </div>
+
+                </div>
+
+
+                <div class="memory-item">
+
+                    <span>✓</span>
+
+                    <div>
+                        <strong>Successful outcomes</strong>
+                        <small>31 remembered</small>
+                    </div>
+
+                </div>
+
+
+                <div class="memory-item">
+
+                    <span>⚠</span>
+
+                    <div>
+                        <strong>Changed assumptions</strong>
+                        <small>6 detected</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+<script src="js/app.js"></script>
+</body>
+
+</html>

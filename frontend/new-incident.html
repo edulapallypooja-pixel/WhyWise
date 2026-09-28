@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WhyWise | Analyze Incident</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <span>◈</span>
+
+            <div>
+                <h2>WhyWise</h2>
+                <small>Decision Intelligence</small>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">◉ Dashboard</a>
+
+            <a class="active" href="new-incident.html">
+                ＋ New Incident
+            </a>
+
+            <a href="incident.html">
+                ◌ Incidents
+            </a>
+
+            <a href="memory.html">
+                ◇ Memory
+            </a>
+
+            <a href="insights.html">
+                ◈ Insights
+            </a>
+        </nav>
+
+        <div class="memory-status">
+
+            <div class="status-dot"></div>
+
+            <div>
+                <strong>Hindsight</strong>
+                <small>Memory Active</small>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+
+                <p class="eyebrow">
+                    WHYWISE ANALYSIS
+                </p>
+
+                <h1>
+                    Analyze a New Incident
+                </h1>
+
+                <p class="subtitle">
+                    Give WhyWise the incident context.
+                    It will search organizational memory
+                    for similar experiences.
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <!-- FORM -->
+        <section class="form-panel">
+
+            <div class="form-header">
+
+                <div>
+
+                    <p class="eyebrow">
+                        INCIDENT DETAILS
+                    </p>
+
+                    <h2>
+                        Tell us what happened
+                    </h2>
+
+                </div>
+
+                <div class="memory-badge">
+                    ● Hindsight Ready
+                </div>
+
+            </div>
+
+
+            <form id="incidentForm">
+
+                <!-- INCIDENT TYPE -->
+                <div class="form-group">
+
+                    <label>
+                        Incident Type
+                    </label>
+
+                    <select id="incidentType">
+
+                        <option value="api">
+                            API Performance
+                        </option>
+
+                        <option value="database">
+                            Database Failure
+                        </option>
+
+                        <option value="deployment">
+                            Deployment Failure
+                        </option>
+
+                        <option value="authentication">
+                            Authentication
+                        </option>
+
+                        <option value="infrastructure">
+                            Infrastructure
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- SERVICE -->
+                <div class="form-group">
+
+                    <label>
+                        Affected Service
+                    </label>
+
+                    <input
+                        type="text"
+                        id="service"
+                        placeholder="e.g. Payment API"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- DESCRIPTION -->
+                <div class="form-group">
+
+                    <label>
+                        What happened?
+                    </label>
+
+                    <textarea
+                        id="description"
+                        rows="5"
+                        placeholder="Describe the incident..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- SEVERITY + SYMPTOMS -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>
+                            Severity
+                        </label>
+
+                        <select id="severity">
+
+                            <option value="critical">
+                                Critical
+                            </option>
+
+                            <option value="high">
+                                High
+                            </option>
+
+                            <option value="medium">
+                                Medium
+                            </option>
+
+                            <option value="low">
+                                Low
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Current Symptoms
+                        </label>
+
+                        <input
+                            type="text"
+                            id="symptoms"
+                            placeholder="e.g. high latency, timeout"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- PREVIOUS ACTION -->
+                <div class="form-group">
+
+                    <label>
+                        What has already been tried?
+                    </label>
+
+                    <textarea
+                        id="previousAction"
+                        rows="4"
+                        placeholder="Example: Restarted application servers..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- BUTTON -->
+                <button
+                    type="submit"
+                    class="analyze-btn"
+                >
+
+                    <span>✦</span>
+
+                    Analyze with WhyWise
+
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/app.js"></script>
+    <script src="js/incident.js"></script>
+
+</body>
+
+</html>

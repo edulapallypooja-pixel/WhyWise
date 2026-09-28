@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WhyWise | Hindsight Memory</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <span>◈</span>
+
+            <div>
+                <h2>WhyWise</h2>
+                <small>Decision Intelligence</small>
+            </div>
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                ◉ Dashboard
+            </a>
+
+            <a href="new-incident.html">
+                ＋ New Incident
+            </a>
+
+            <a href="incident.html">
+                ◌ Incidents
+            </a>
+
+            <a class="active" href="memory.html">
+                ◇ Memory
+            </a>
+
+            <a href="insights.html">
+                ◈ Insights
+            </a>
+
+        </nav>
+
+        <div class="memory-status">
+
+            <div class="status-dot"></div>
+
+            <div>
+                <strong>Hindsight</strong>
+                <small>Memory Active</small>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+
+                <p class="eyebrow">
+                    HINDSIGHT MEMORY
+                </p>
+
+                <h1>
+                    What WhyWise Remembers
+                </h1>
+
+                <p class="subtitle">
+                    Historical incidents, decisions, outcomes,
+                    and lessons learned by the organization.
+                </p>
+
+            </div>
+
+            <div class="analysis-status">
+                ● MEMORY ACTIVE
+            </div>
+
+        </header>
+
+
+        <!-- MEMORY INTRO -->
+        <section class="memory-page-card">
+
+            <div class="memory-page-header">
+
+                <div>
+
+                    <p class="eyebrow">
+                        ORGANIZATIONAL KNOWLEDGE
+                    </p>
+
+                    <h2>
+                        Hindsight Memory Bank
+                    </h2>
+
+                    <p>
+                        WhyWise uses previous incidents and actual
+                        outcomes to improve future recommendations.
+                    </p>
+
+                </div>
+
+                <div class="memory-count">
+                    <strong id="memoryCount">—</strong>
+                    <span>Memories</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MEMORY LIST -->
+        <section class="memory-list-section">
+
+            <div class="memory-list-header">
+
+                <div>
+                    <p class="eyebrow">
+                        RECALLED KNOWLEDGE
+                    </p>
+
+                    <h2>
+                        Historical Memory
+                    </h2>
+                </div>
+
+                <span class="memory-live">
+                    ● HINDSIGHT
+                </span>
+
+            </div>
+
+
+            <div id="memoryList">
+
+                <div class="memory-loading">
+                    Loading organizational memory...
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="js/memory.js"></script>
+
+</body>
+
+</html>
